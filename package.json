@@ -1,0 +1,28 @@
+{
+  "name": "mono-repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "publish": "npx google-artifactregistry-auth && lerna publish",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/L2D2Grafana/mono-repo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/L2D2Grafana/mono-repo/issues"
+  },
+  "homepage": "https://github.com/L2D2Grafana/mono-repo#readme",
+  "workspaces": [
+    "packages/plugin1",
+    "packages/plugin2",
+    "packages/shared"
+  ],
+  "dependencies": {
+    "lerna": "^8.0.0"
+  }
+}
